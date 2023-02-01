@@ -3,7 +3,6 @@ import * as dotenv from "dotenv"; // see https://github.com/motdotla/dotenv#how-
 dotenv.config();
 
 const endpoint = process.env.API;
-console.log(PORT);
 export const api = axios.create({
 	headers: { "Content-Type": "multipart/form-data" },
 	baseURL: endpoint,
